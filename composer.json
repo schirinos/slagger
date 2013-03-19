@@ -1,0 +1,21 @@
+{
+    "name": "scrumptious/slagger",
+    "type": "library",
+    "description": "Slim middleware for generating Swagger json for use with Swagger UI",
+    "keywords": ["documentation","swagger","json","slim","middleware"],
+    "homepage": "https://github.com/schirinos/slagger",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sigfrido Chirinos",
+            "homepage": "https://github.com/schirinos"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "slim/slim": "2.*",
+    },
+    "autoload": {
+        "psr-0": { "Slagger": "." }
+    }
+}
