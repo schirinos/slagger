@@ -4,8 +4,8 @@
  *
  * @author      Sigfrido Chirinos
  * @link        https://github.com/schirinos/slagger
- * @package Slagger
- * @author Sigfrido Chirinos
+ * @package     Slagger
+ * @author      Sigfrido Chirinos
  *
  * MIT LICENSE
  *
@@ -28,7 +28,7 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-namespace Slagger;
+namespace Slagger; 
 
 class APIDoc extends \Slim\Middleware
 {
