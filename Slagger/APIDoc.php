@@ -136,7 +136,7 @@ class APIDoc extends \Slim\Middleware
                                 "required" => true,
                                 "allowMultiple" => false,
                                 "dataType" => "String"
-                            ], $route_path_parms[$param_name])
+                            ], (isset($route_path_parms[$param_name]) ? $route_path_parms[$param_name] : []))
                         );
                     }
 
