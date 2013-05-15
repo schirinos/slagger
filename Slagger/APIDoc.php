@@ -154,7 +154,7 @@ class APIDoc extends \Slim\Middleware
                                     "name" => (!empty($value['name'])) ? $value['name'] : "",
                                     "description" => (!empty($value['description'])) ? $value['description'] : "", 
                                     "paramType" => "query",
-                                    "required" => (!empty($value['required']) && is_bool($value['required'])) ? $value['required'] : true,
+                                    "required" => (isset($value['required']) && is_bool($value['required'])) ? $value['required'] : true,
                                     "allowMultiple" => (!empty($value['allowMultiple']) && is_bool($value['allowMultiple'])) ? $value['allowMultiple'] : false,
                                     "dataType" => (!empty($value['dataType'])) ? $value['dataType'] : "String"
                                 ]
