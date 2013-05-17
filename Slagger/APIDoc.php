@@ -201,7 +201,8 @@ class APIDoc extends \Slim\Middleware
                     $operations[] = [
                         "httpMethod" => $method,
                         "summary" =>  (!empty($this->routeDoc[$routeName]['summary'])) ? $this->routeDoc[$routeName]['summary'] : $route->getName(),
-                        "responseClass" => "void",
+                        "responseClass" => (!empty($this->routeDoc[$routeName]['responseClass'])) ? $this->routeDoc[$routeName]['responseClass'] : "void",
+                        "errorResponses" => (!empty($this->routeDoc[$routeName]['errorResponses'])) ? $this->routeDoc[$routeName]['errorResponses'] : "",
                         "nickname" => $route->getName(),
                         "parameters" => array_merge($path_params, $query_parms, $body_parms)
                     ];
