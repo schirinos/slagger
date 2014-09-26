@@ -41,7 +41,7 @@ Options passed through to the **getResource** function of the [Zircote swagger-p
 
 
 ### Annotations
-The [Zircote Swagger-php](https://github.com/zircote/swagger-php) library will parse the Swagger annotations in your files
+The [Zircote Swagger-php](https://github.com/zircote/swagger-php) library will parse the Swagger annotations in your files.
 See the [Swagger-php docs](http://zircote.com/swagger-php/) for what annotations are supported.
 
 ex: 
