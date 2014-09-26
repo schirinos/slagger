@@ -1,12 +1,9 @@
 Slagger
 ============
 
-A Slim PHP middleware for generating swagger json documentation for use with Swagger UI.
-
-## Introduction
-This [Slim PHP](http://www.slimframework.com/) middleware will automatically add swagger json endpoints
-for all your Swagger annotated classes. See the [Zircote Swagger-php](http://zircote.com/swagger-php/)
-docs for what annotations are supported.
+A [Slim PHP](http://www.slimframework.com/) middleware for generating swagger json for use with Swagger UI.
+This middleware will automatically add swagger json endpoints for all your Swagger doc annotated classes. 
+See the [Zircote Swagger-php](http://zircote.com/swagger-php/) docs for what annotations are supported.
 
 ## Install Using Composer
 ```
