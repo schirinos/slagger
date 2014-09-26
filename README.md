@@ -26,7 +26,7 @@ $app->add(new \Slagger\Slagger('/api/v1/docs', __DIR__.'/../lib'));
 
 $app->run();
 ```
-You'd then input the url **http://myapi.com/api/v1/docs** in the Swagger-UI interface.
+You'd then input the url `**http://yourapidomain.com/api/v1/docs**` in the Swagger-UI interface.
 
 ### Slagger(docsuri, scandir, options)
 The constructor takes up to three arguments. 
