@@ -49,18 +49,23 @@ class Slagger extends \Slim\Middleware
 
         // Swager Documentation
         $app->group($this->path, function () use ($app) {
-            $swagger = new \Swagger\Swagger($this->scanPath);
-            $resourceList = $swagger->getResourceList();
-            
-            $app->get('/', function () use ($swagger, $resourceList) {
+
+            $app->get('/', function () use ($app) {
+                $swagger = new \Swagger\Swagger($this->scanPath);
+                $resourceList = $swagger->getResourceList();
                 echo json_encode($resourceList);
             });
 
-            foreach ($resourceList['apis'] as $value) {
-                $app->get($value['path'], function () use ($swagger, $value) {
-                    echo $swagger->getResource($value['path'], $this->options);
-                });
-            }
+            $app->get('/:path', function ($path) use ($app) {
+                $swagger = new \Swagger\Swagger($this->scanPath);
+                $resourceList = $swagger->getResourceList();
+                
+                if (!empty($path)) {
+                    echo $swagger->getResource('/'.$path, $this->options);
+                } else {
+                    echo json_encode($resourceList);
+                }
+            });            
             
         });
 
