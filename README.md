@@ -22,7 +22,7 @@ $app = new \Slim\Slim();
 // Inject as Slim application middleware
 $app->add(new \Slagger\Slagger('/api/v1/docs', __DIR__.'/../lib'));
 
-\\ ... you app code
+\\ ... your app code
 
 $app->run();
 ```
