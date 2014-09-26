@@ -34,7 +34,7 @@ The constructor takes up to three arguments.
 The uri in your app that will return swagger json.
 
 ####scandir
-The directory to scan for file with Swagger annotations. 
+The directory to scan for files with Swagger annotations. 
 
 ####options [optional]
 Options passed through to the **getResource** function of the [Zircote swagger-php](https://github.com/zircote/Swagger-php) library.
