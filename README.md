@@ -5,7 +5,7 @@ A Slim PHP middleware for generating swagger json documentation for use with Swa
 
 ## Introduction
 This (Slim PHP)[http://www.slimframework.com/] middleware will automatically add swagger json endpoints
-for all your Swagger annotated classes. See the (Zircote Swagger-php)[http://zircote.com/swagger-php/] 
+for all your Swagger annotated classes. See the [Zircote Swagger-php](http://zircote.com/swagger-php/)
 docs for what annotations are supported.
 
 ## Install Using Composer
@@ -41,4 +41,4 @@ The uri in your app that will return swagger json.
 The directory to scan for file with Swagger annotations. 
 
 ####options
-Options passed through to the **getResource** function of the (Zircote swagger-php)[https://github.com/zircote/Swagger-php] library.
+Options passed through to the **getResource** function of the [Zircote swagger-php](https://github.com/zircote/Swagger-php) library.
